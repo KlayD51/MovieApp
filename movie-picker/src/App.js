@@ -33,7 +33,7 @@ console.log(movies)
       </div>
       <div className='movies'>
       {movies.map((movie) =>
-        <MovieCard/>
+        <MovieCard {...movie}/>
        )}
       </div>
 
