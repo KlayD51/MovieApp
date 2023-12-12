@@ -29,7 +29,7 @@ console.log(movies)
   return (
     <div className="App">
       <div className='searchNav'>
-        <div>
+        <div className='title'>
           <h1>Movies</h1>
         </div>
 

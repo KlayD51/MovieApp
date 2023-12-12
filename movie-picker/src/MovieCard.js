@@ -8,7 +8,7 @@ const MovieCard = (props) => {
   return (
     <div className='card'>
         <div className='poster'>
-            <img src={API_IMG + props.poster_path}/>
+            <img src={props.poster_path ? API_IMG + props.poster_path : 'https://images.unsplash.com/photo-1518676590629-3dcbd9c5a5c9?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGNpbmVtYXxlbnwwfHwwfHx8MA%3D%3D' }/>
 
         </div>
         <div className='info'>
@@ -16,7 +16,15 @@ const MovieCard = (props) => {
             <p className='vote'>{props.vote_average}</p>
 
         </div>
+        <div className='overview'>
+            <h2 className='titleOverview'>Overview:</h2>
+            <h3 className='overviewInfo'>{props.overview}</h3>
+
     </div>
+
+    </div>
+
+    
   )
 }
 
