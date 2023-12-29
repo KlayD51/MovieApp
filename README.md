@@ -4,7 +4,7 @@
 
 # Getting Started
 
-clone or fork repository
-npm install
-npm start
+- clone or fork repository
+- npm install
+- npm start
 
